@@ -1,0 +1,101 @@
+.modal-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: 0.2s ease all;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-dialog.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-dialog::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  opacity: 0.5;
+}
+
+.modal-dialog-wrapper {
+  max-width: 800px;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.modal-dialog-wrapper .modal-img {
+  display: flex;
+}
+
+.modal-dialog .modal-close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  font-size: 40px;
+  background: transparent;
+}
+
+.modal-dialog .popup-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.popup-content .popup-title h3 {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.modal-dialog .popup-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-top: 20px;
+}
+
+.popup-content .modal-text {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #7a7a7a;
+}
+
+.popup-content .popup-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+}
+
+/* responsive */
+@media (max-width: 576px) {
+  .modal-dialog .modal-close {
+    top: 0;
+    right: 0;
+    font-size: 30px;
+  }
+
+  .modal-dialog .modal-dialog-wrapper {
+    max-width: 350px;
+  }
+
+  .modal-dialog .modal-img img {
+    display: none;
+  }
+}

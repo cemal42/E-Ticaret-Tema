@@ -1,0 +1,97 @@
+.section-title {
+  text-align: center;
+  margin: 35px 0;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+*/
+
+/* categories start */
+.categories {
+  margin-top: 40px;
+}
+
+.categories .category-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+/* categories end */
+
+/* products start */
+.products {
+  margin-bottom: 40px;
+}
+
+/* .products .product-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+} */
+/* products end */
+
+/* campaigns start */
+.campaigns .campaigns-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+/* campaigns end */
+
+/* blogs start */
+.blogs {
+  margin-bottom: 30px;
+}
+
+.blogs .blog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+/* blogs end */
+
+/* brands start */
+.brands {
+  margin: 40px 0;
+}
+
+.brands .brand-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px 5px;
+  border: 1px solid #dee0ea;
+}
+
+.brand-list .brand-item {
+  opacity: 0.5;
+  transition: 0.3s ease all;
+}
+
+.brand-list .brand-item:hover {
+  opacity: 1;
+}
+/* brands end */
+
+/* policy start */
+.policy {
+  border-top: 1px solid #dee0ea;
+}
+/* policy end */
+
+/* responsive */
+@media (max-width: 768px) {
+  .blogs .blog-list {
+    grid-template-columns: 1fr;
+  }
+
+  .policy .policy-list {
+    flex-direction: column;
+  }
+}

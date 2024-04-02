@@ -1,0 +1,167 @@
+/* base start */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  transition: 0.2s ease opacity;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: no-drop;
+}
+
+.btn {
+  line-height: 40px;
+  padding: 0 30px;
+  font-weight: 500;
+  transition: 0.2s ease all;
+  border: 1px solid #000;
+  display: inline-block;
+}
+
+.btn-sm {
+  line-height: 35px;
+  padding: 0 20px;
+  display: inline-block;
+}
+
+.btn-lg {
+  line-height: 45px;
+  padding: 0 45px;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #1367ef;
+  color: white;
+  border: 1px solid #1367ef;
+}
+
+.btn-white {
+  background-color: white;
+  color: #1367ef;
+  border: 1px solid #1367ef;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #1367ef;
+  border: 1px solid #1367ef;
+}
+
+.btn-white:hover {
+  background-color: #1367ef;
+  color: #fff !important;
+  border: 1px solid #1367ef;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+textarea {
+  outline: none;
+  padding: 8px 8px 8px 15px;
+  border: 1px solid #dee0ea;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: gray;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+  padding: 5px;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+/* base end */
+
+/* base responsive start */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    max-width: 350px;
+  }
+}
+/* base responsive end */

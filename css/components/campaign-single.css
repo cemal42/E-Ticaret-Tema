@@ -1,0 +1,31 @@
+.campaign-single {
+  background-image: url(../../img/single-campaign.png);
+  padding: 150px 15px;
+  margin-bottom: 30px;
+  background-attachment: fixed;
+}
+
+.campaign-single .campaign-single-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.campaign-single-wrapper h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.campaign-single-wrapper strong {
+  font-size: 40px;
+}
+
+.campaign-single-wrapper span {
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+  background-color: white;
+  margin: 20px 0;
+}
